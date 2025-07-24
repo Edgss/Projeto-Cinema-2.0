@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #000;
+    --hover: #333;
+    --botao: blue;
+    --animation: linear-gradient(45deg, red, blue, yellow);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.menu-busca{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.menu-busca input[type="text"]{
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+}
+
+.cadastro{
+    display: flex;
+    gap: 20px;
+}
+
+.cadastro a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 25px;
+    padding: .5rem;
+    background: var(--animation);
+    border-radius: 5px;
+    cursor: pointer;
+}

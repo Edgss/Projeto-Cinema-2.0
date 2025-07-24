@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --amarelo: #FFB300;
+    --borda:#333;
+    --background: rgb(22,22,22);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', 'sans-serif';
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../imgs/background\ fundo.png);
+    color: white;
+}
+
+.banner{
+    display: none;
+}
+
+.galeria-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(22, 22, 22);
+    width: 400px;
+    height: 460px;
+    border-radius: 5px;
+    gap: 25px;
+    padding: 1rem;
+}
+
+.galeria-flex::before, .galeria-flex::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background: linear-gradient(45deg, #FFEB3B, #FFC107, #FFB300);
+    z-index: -1;
+    border-radius: 8px;
+    background-size: 300%;
+    animation: bordaAnimada 6s linear infinite alternate;
+}
+
+.galeria-flex::after{
+    filter: blur(6px);
+}
+
+@keyframes bordaAnimada {
+    0%{background-position: 0;}
+
+    100%{background-position: 300%;}
+}
+
+.title{
+    font-size: 50px;
+    animation: dungeon 7s linear infinite alternate;
+    background-image: linear-gradient(45deg, red,#ce1313d5, #b30000);
+    color: transparent;
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+}
+
+@keyframes dungeon {
+    0%{background-position-x: 100%;}
+    100%{background-position: 400%;}
+}
+
+
+.mini-barra{ color: rgba(255, 255, 255, 0.199);}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFB300;
+    color: white;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--amarelo);
+    gap: 5px;
+}
+
+.input-senha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--amarelo);
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.icones-users{
+    font-size: 18px;
+}
+
+.botao-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    background-color: #b30000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes ul{list-style: none;}
+
+.redes ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    margin: 0 10px;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid #333;
+    transition: .3s;
+}
+
+.redes ul li:hover{
+    width: 100px;
+}
+
+.redes span{position: absolute;}
+
+.redes ul li:hover::before{opacity: 1;}
+
+.redes ul li .icon{
+    font-size: 25px;
+    color: var(--amarelo);
+    transition: .2s;
+}
+
+.redes ul li:hover .icon{transform: scale(0);}
+
+.redes ul li .text{
+    font-size: 16px;
+    color: var(--amarelo);
+    font-weight: bold;
+    transition: .2s;
+    transition-delay: .1s;
+    transform: scale(0);
+}
+
+.redes ul li:hover .text{transform: scale(1);}
+
+@media (min-width: 768px){
+    p{color: green;}
+}
+
+@media(min-width:1024px){
+
+    .principal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: rgb(22, 22, 22);
+        width: 790px;
+        height: 460px;
+        border-radius: 5px;
+        gap: 25px;
+        padding: rem;
+    }
+
+    .principal::before, .principal::after{
+        content: "";
+        position: absolute;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        background: linear-gradient(45deg, #FFEB3B, #FFC107, #FFB300);
+        z-index: -1;
+        border-radius: 8px;
+        background-size: 300%;
+        animation: bordaAnimada 6s linear infinite alternate;
+    }
+    
+    .principal::after{
+        filter: blur(6px);
+    }
+    
+    @keyframes bordaAnimada {
+        0%{background-position: 0;}
+    
+        100%{background-position: 300%;}
+    }
+
+    .banner{
+        display: flex;
+        width: 450px;
+        height: 460px;
+    }
+
+    .banner img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    p{color: red;}
+}

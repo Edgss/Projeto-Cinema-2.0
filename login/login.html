@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="principal">
+        <div class="banner">
+            <img src="../imgs/users.png" alt="">
+        </div>
+        <div class="galeria-flex">
+            <h1 class="title">Cinema</h1>
+            <form action="dados-user">
+                <div class="dados-email">
+                    <label for="email">Email:</label><br>
+                    <div class="input-email">
+                        <input type="email" id="email" name="senha"><br>
+                        <i class="bi-person-circle icones-users"></i>
+                    </div>
+                </div>
+                <div class="dados-senha">
+                    <label for="senha">Senha:</label></div>
+                    <div class="input-senha">
+                        <input type="password" id="senha" name="senha">
+                        <i class="bi-eye-fill icones-users" id="icone" cla></i>
+                    </div>
+                    <div class="botao-submit"><button type="submit">Entrar</button></div>
+            </form>
+            <p class="ou"><span class="mini-barra">━━━━━━</span> ou se preferir <span class="mini-barra">━━━━━━</span></p>
+            <div class="redes">
+                <ul>
+                    <li class="google">
+                        <span class="icon"><i class="bi-google"></i></span>
+                        <span class="text">Google</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="facebook">
+                        <span class="icon"><i class="bi-facebook"></i></span>
+                        <span class="text">Facebook</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="linkedin">
+                        <span class="icon"><i class="bi-linkedin"></i></span>
+                        <span class="text">Linkedin</span>
+                    </li>
+                </ul>
+            </div>
+        </div><!--Fim da div galeria-flex-->
+    </div><!--Fim da div principal-->
+    
+    <script src="login.js"></script>
+</body>
+</html>
