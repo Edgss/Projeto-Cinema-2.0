@@ -26,12 +26,12 @@ trilho.addEventListener("click", ()=>{
     
 
     if(banner.src.includes("users.png")){
-        banner.src = "../imgs/users-white.png"
-        body.style.backgroundImage = "url(../imgs/backgroundWhite2.png"
+        banner.src = "imgs/users-white.png"
+        body.style.backgroundImage = "url(imgs/backgroundWhite2.png"
     }
     else{
-        banner.src = "../imgs/users.png"
-        body.style.backgroundImage = "url(../imgs/background.png)"
+        banner.src = "imgs/users.png"
+        body.style.backgroundImage = "url(imgs/background.png)"
     }
 
 
