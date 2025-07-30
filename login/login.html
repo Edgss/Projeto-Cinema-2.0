@@ -7,61 +7,63 @@
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <header>
-            <div class="trilho" id="trilho">
-                <div class="botao" id="botao"></div>
-            </div>
-    </header>
-
-    <div class="principal">
-        <div class="banner">
-            <img src="../imgs/users.png" alt="banner" id="banner">
-        </div>
-        <div class="galeria-flex">
-            <h1 class="title">Cinema</h1>
-            <form action="dados-user">
-                <div class="dados-email">
-                    <label for="email">Email:</label><br>
-                    <div class="input-email">
-                        <input type="email" id="email" name="senha" required><br>
-                        <i class="bi-person-circle icones-users"></i>
-                    </div>
+<div class="overlay">
+    <body>
+        <header>
+                <div class="trilho" id="trilho">
+                    <div class="botao" id="botao"></div>
                 </div>
-                <div class="dados-senha">
-                    <label for="senha">Senha:</label></div>
-                    <div class="input-senha">
-                        <input type="password" id="senha" name="senha" required>
-                        <i class="bi-eye-fill icones-users" id="icone" cla></i>
-                    </div>
-                    <div class="botao-submit">
-                        <button type="submit">Entrar</button>
-                        <button type="submit">Cadastre-se</button>
-                    </div>
-            </form>
-            <p class="ou"><span class="mini-barra">━━━━━━</span> Entrar com<span class="mini-barra">━━━━━━</span></p>
-            <div class="redes">
-                <ul>
-                    <li class="google">
-                        <span class="icon"><i class="bi-google"></i></span>
-                        <span class="text">Google</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="facebook">
-                        <span class="icon"><i class="bi-facebook"></i></span>
-                        <span class="text">Facebook</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="linkedin">
-                        <span class="icon"><i class="bi-linkedin"></i></span>
-                        <span class="text">Linkedin</span>
-                    </li>
-                </ul>
+        </header>
+    
+        <div class="principal">
+            <div class="banner">
+                <img src="../imgs/users.png" alt="banner" id="banner">
             </div>
-        </div><!--Fim da div galeria-flex-->
-    </div><!--Fim da div principal-->
+            <div class="galeria-flex">
+                <h1 class="title">Cinema</h1>
+                <form action="dados-user">
+                    <div class="dados-email">
+                        <label for="email">Email:</label><br>
+                        <div class="input-email">
+                            <input type="email" id="email" name="senha" required><br>
+                            <i class="bi-person-circle icones-users"></i>
+                        </div>
+                    </div>
+                    <div class="dados-senha">
+                        <label for="senha">Senha:</label></div>
+                        <div class="input-senha">
+                            <input type="password" id="senha" name="senha" required>
+                            <i class="bi-eye-fill icones-users" id="icone"></i>
+                        </div>
+                        <div class="botao-submit">
+                            <button type="submit">Entrar</button>
+                            <button type="submit">Cadastre-se</button>
+                        </div>
+                </form>
+                <p class="ou"><span class="mini-barra">━━━━━━</span> Entrar com<span class="mini-barra">━━━━━━</span></p>
+                <div class="redes">
+                    <ul>
+                        <li class="google">
+                            <span class="icon"><i class="bi-google"></i></span>
+                            <span class="text">Google</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="facebook">
+                            <span class="icon"><i class="bi-facebook"></i></span>
+                            <span class="text">Facebook</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="linkedin">
+                            <span class="icon"><i class="bi-linkedin"></i></span>
+                            <span class="text">Linkedin</span>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--Fim da div galeria-flex-->
+        </div><!--Fim da div principal-->
+</div>
     
     <script src="login.js"></script>
 </body>
