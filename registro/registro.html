@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-Se</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <div class="trilho" id="trilho"><div class="botao"></div></div>
+        </header>
+
+        <div class="principal-registro">
+
+         <div class="banner">
+            <img src="imgs/cadastro.png" alt="cadastro" id="banner">
+         </div>   
+
+        <div class="dados">
+         <form action="dados-users">
+             
+                <div class="titulo">
+                    <h1 class="title">Registre-Se</h1>
+                </div>
+
+                <div class="nome">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required placeholder="Insira seu nome">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" required placeholder="Exemplo@gmail.com">
+                </div>
+
+                <div class="senha1">
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" name="senha1" id="senha1" placeholder="Insira sua senha">
+                </div>
+
+                <div class="senha2">
+                    <label for="">Confirme sua senha:</label><br>
+                    <input type="password" name="senha2" id="senha2" placeholder="Confirme sua senha">
+                </div>
+
+                <div class="telefone">
+                    <label for="">Telefone:</label><br>
+                    <input type="number" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="telefone">
+                    <label for="">CPF:</label><br>
+                    <input type="number" name="cpf" id="cpf" placeholder="XXX.XXX.XXX-XX">
+                </div>
+
+                <div class="data">
+                    <label for="data">Data de Nascimento:</label><br>
+                    <input type="date" id="data" name="data">
+                </div>
+
+
+                <div class="botao-registro"><button type="submit">Enviar</button></div>
+         </form>
+            </div><!--Fim da dados-->  
+
+        </div><!--Fim div principal-->
+
+    </div><!--Fim da div overlay-->
+
+    <script src="registro.js"></script>
+</body>
+</html>
